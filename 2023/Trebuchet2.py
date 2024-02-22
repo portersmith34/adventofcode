@@ -34,6 +34,7 @@ def reverse(last):
 sum = 0
 file = open("calibration values.txt", "r")
 linesList= file.readlines()
+
 for line in linesList:
   line = line.strip()
   blocks = re.split("[1-9]", line)
@@ -41,8 +42,10 @@ for line in linesList:
   first = blocks[0]
   last = blocks[len(blocks)-1]
   last = reverse(last)
-  search1 = re.findall("one|two|three|four|five|six|seven|eight|nine", first)
-  search2 = re.findall("eno|owt|eerht|ruof|evif|xis|neves|thgie|enin", last)
+  search = "one|two|three|four|five|six|seven|eight|nine"
+  search1 = re.findall(search, first)
+  search = reverse(search)
+  search2 = re.findall(search, last)
   if (len(search1) > 0):
    first = intFromString(search1[0])
   else:
