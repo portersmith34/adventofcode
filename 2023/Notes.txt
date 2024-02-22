@@ -1,0 +1,10 @@
+Day1:
+- you can store the lines of a file in a list to limit iteration to a section of the list
+  example: for line in linesList[:10]: - to only iterate over first 10 lines
+- use line.strip() to remove whitespace and newlines
+
+Day2:
+- re.findall() is better than re.search() for most cases
+- Correct regex pattern starts with r - (r"[1-9]")
+- Use a comma in print statement to print different types on the same line 
+  example: print("count:", 100)
