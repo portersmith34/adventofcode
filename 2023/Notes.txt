@@ -8,3 +8,7 @@ Day2:
 - Correct regex pattern starts with r - (r"[1-9]")
 - Use a comma in print statement to print different types on the same line 
   example: print("count:", 100)
+- You do not need regex, sometimes use string functions
+  example: string.replace(), string.split()
+- You don't need parenthesis in if statement - (if count < 10:)
+- Use num ** 2 to square a number
