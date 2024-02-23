@@ -1,9 +1,9 @@
-Day1:
+Day1: (python)
 - you can store the lines of a file in a list to limit iteration to a section of the list
   example: for line in linesList[:10]: - to only iterate over first 10 lines
 - use line.strip() to remove whitespace and newlines
 
-Day2:
+Day2: (python)
 - re.findall() is better than re.search() for most cases
 - Correct regex pattern starts with r - (r"[1-9]")
 - Use a comma in print statement to print different types on the same line 
@@ -13,7 +13,10 @@ Day2:
 - You don't need parenthesis in if statement - (if count < 10:)
 - Use num ** 2 to square a number
 
-Day3:
+Day3: (python)
 - Use [-1] to access the last item instead of [len(array)-1]
 - String.replace() has a 3rd parameter to set how many instances to replace
   example: mystring.replace(" ", "", 3) will replace the first 3 spaces
+- For sequences, (strings, lists, tuples), use the fact that empty sequences are false
+  example: if len(nums): -> if nums:
+       or  if not mystring == "": -> if mystring:
