@@ -12,3 +12,8 @@ Day2:
   example: string.replace(), string.split()
 - You don't need parenthesis in if statement - (if count < 10:)
 - Use num ** 2 to square a number
+
+Day3:
+- Use [-1] to access the last item instead of [len(array)-1]
+- String.replace() has a 3rd parameter to set how many instances to replace
+  example: mystring.replace(" ", "", 3) will replace the first 3 spaces
