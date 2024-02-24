@@ -9,9 +9,7 @@ def find_winning_cards(linesList, numWin):
             split.remove("")
         wining_numbers = split[2:numWin+2]
         numbers_you_have = split[numWin+3: len(split)]
-        point_value = 0
         count = 0
-        numbers_you_have.sort()
         for num in wining_numbers:
             if num in numbers_you_have:
                 count += 1
