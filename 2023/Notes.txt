@@ -21,3 +21,4 @@ Day3: (python)
   example: if len(nums): -> if nums:
        or  if not mystring == "": -> if mystring:
 - Python uses snake case - (my_string_value)
+- You can write tests in Python using unittest
