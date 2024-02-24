@@ -52,7 +52,6 @@ def find_gear_ratio(linesList):
     for sym in prevSyms:
       if sym[0] in ratios.keys():
         if len(ratios[sym[0]]) == 2:
-          print("doing the math")
           sum += int(ratios[sym[0]][0]) * int(ratios[sym[0]][1])
         del ratios[sym[0]]
         
