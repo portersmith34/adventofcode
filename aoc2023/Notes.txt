@@ -22,3 +22,7 @@ Day3: (python)
        or  if not mystring == "": -> if mystring:
 - Python uses snake case - (my_string_value)
 - You can write tests in Python using unittest
+
+Day4: (python)
+- "Fancy algorithms are slow when n is small, and n is usually small" -Rob Pike
+  example: implementing binary search did not improve running time (because n was small)

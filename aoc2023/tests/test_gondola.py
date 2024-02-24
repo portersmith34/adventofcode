@@ -1,11 +1,11 @@
 import unittest
-import gondola2
+from  aoc2023.day3.gondola import find_part_numbers
 
 class TestGondola(unittest.TestCase):
     
     @classmethod
     def setUpClass(self):
-        file = open("2023/day3/test values.txt", "r")
+        file = open("aoc2023/day3/test values.txt", "r")
         self.lines = file.readlines()
         file.close()
     
@@ -14,4 +14,5 @@ class TestGondola(unittest.TestCase):
         pass
     
     def test_input(self):
-        self.assertEqual(gondola2.find_gear_ratio(self.lines), 467835)
+        sum = find_part_numbers(self.lines)
+        self.assertEqual(sum, 4361)
