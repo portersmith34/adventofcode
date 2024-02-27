@@ -20,4 +20,4 @@ class TestScratchcards2(unittest.TestCase):
         self.assertEqual(find_all_cards(self.sample, 5), 30)
 
     def test_real_input(self):
-        self.assertEqual(find_all_cards(self.puzzle, 10), 0)
+        self.assertEqual(find_all_cards(self.puzzle, 10), 8477787)
