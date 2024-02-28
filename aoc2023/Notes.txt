@@ -5,7 +5,7 @@ Day1: (python)
 
 Day2: (python)
 - re.findall() is better than re.search() for most cases
-- Correct regex pattern starts with r - (r"[1-9]")
+- Ues raw string literal in regex, this also removes the need to escape special characters - (r"[1-9]")
 - Use a comma in print statement to print different types on the same line 
   example: print("count:", 100)
 - You do not need regex, sometimes use string functions

@@ -1,24 +1,21 @@
 import unittest
 from aoc2023.day5.seeds import find_first_location
 
-class TestScratchcards2(unittest.TestCase):
+class TestSeeds(unittest.TestCase):
     
     @classmethod
     def setUpClass(self):
-        file = open("aoc2023/day5/test input.txt", "r")
-        self.sample = file.readlines()
-        file.close()
-        file = open("aoc2023/day5/seed input.txt", "r")
-        self.puzzle = file.readlines()
-        file.close()
+        with open("aoc2023/day5/test input.txt", "r") as file:
+            self.sample = file.read()
+        
+        with open("aoc2023/day5/seed input.txt", "r") as file:
+            self.puzzle = file.read()
     
     def setUp(self):
         pass
     
-    
     def test_sample_input(self):
         self.assertEqual(find_first_location(self.sample), 35)
-
-
-    # def test_real_input(self):
-    #     self.assertEqual(find_first_location(self.puzzle), 0)
+    
+    def test_real_input(self):
+        self.assertEqual(find_first_location(self.puzzle), 57075758)
