@@ -1,9 +1,10 @@
+
 def find_first_location(file):
     maps = []
     location_list = []
     blocks = file.split("\n\n")
     seed_list = [int(x) for x in blocks[0].split()[1:]] 
-    
+    seed_list = list(zip(seed_list[::2], seed_list[1::2]))
     # create maps
     for section in blocks[1:]:
         new_map = SeedMap()
@@ -12,11 +13,12 @@ def find_first_location(file):
             new_map.dict[(source, source+length)] = dest
         maps.append(new_map)
     
-    # do the mapping
-    for seed in seed_list:
-        for current_map in maps:
-            seed = current_map.process(seed)
-        location_list.append(seed)
+    # do the mapping 
+    for start, length in seed_list:
+        for seed in range(start, start+length):
+            for current_map in maps:
+                seed = current_map.process(seed)
+            location_list.append(seed)
     return min(location_list)
 
 class SeedMap:
@@ -31,3 +33,7 @@ class SeedMap:
                 return output_number
         
         return input_number
+
+with open("aoc2023/day5/seed input.txt", "r") as file:
+    sample = file.read()
+print(find_first_location(sample))
