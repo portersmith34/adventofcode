@@ -21,6 +21,9 @@ def find_first_location(file):
             location_list.append(seed)
     return min(location_list)
 
+
+# TODO: do transformations on the seed range list instead of on the individual seeds
+
 class SeedMap:
     
     def __init__(self):
@@ -34,6 +37,6 @@ class SeedMap:
         
         return input_number
 
-with open("aoc2023/day5/seed input.txt", "r") as file:
+with open("aoc2023/day5/test input.txt", "r") as file:
     sample = file.read()
 print(find_first_location(sample))
