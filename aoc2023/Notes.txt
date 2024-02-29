@@ -27,3 +27,6 @@ Day4: (python)
 - "Fancy algorithms are slow when n is small, and n is usually small" -Rob Pike
   example: implementing binary search did not improve running time (because n was small)
 - pass around the least amount of information possible
+
+Day5: (python)
+- Making a drawing can be more useful than debugging
