@@ -30,3 +30,4 @@ Day4: (python)
 
 Day5: (python)
 - Making a drawing can be more useful than debugging
+- Ask for an additional opinion 
