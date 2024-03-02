@@ -1,9 +1,9 @@
-Day1: (python)
+Day1: 
 - you can store the lines of a file in a list to limit iteration to a section of the list
   example: for line in linesList[:10]: - to only iterate over first 10 lines
 - use line.strip() to remove whitespace and newlines
 
-Day2: (python)
+Day2: 
 - re.findall() is better than re.search() for most cases
 - Ues raw string literal in regex, this also removes the need to escape special characters - (r"[1-9]")
 - Use a comma in print statement to print different types on the same line 
@@ -13,7 +13,7 @@ Day2: (python)
 - You don't need parenthesis in if statement - (if count < 10:)
 - Use num ** 2 to square a number
 
-Day3: (python)
+Day3: 
 - Use [-1] to access the last item instead of [len(array)-1]
 - String.replace() has a 3rd parameter to set how many instances to replace
   example: mystring.replace(" ", "", 3) will replace the first 3 spaces
@@ -23,11 +23,11 @@ Day3: (python)
 - Python uses snake case - (my_string_value)
 - You can write tests in Python using unittest
 
-Day4: (python)
+Day4: 
 - "Fancy algorithms are slow when n is small, and n is usually small" -Rob Pike
   example: implementing binary search did not improve running time (because n was small)
 - pass around the least amount of information possible
 
-Day5: (python)
+Day5: 
 - Making a drawing can be more useful than debugging
 - Ask for an additional opinion 
