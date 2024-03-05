@@ -49,6 +49,6 @@ def find_first_location(file):
 
 
 
-with open("aoc2023/day5/test input.txt", "r") as file:
-    sample = file.read()
-print(find_first_location(sample))
+# with open("aoc2023/day5/test input.txt", "r") as file:
+#     sample = file.read()
+# print(find_first_location(sample))
