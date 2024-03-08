@@ -24,6 +24,7 @@ def find_first_location(file):
                     dist_from_map = start_seed - map_in_start
                     start_seed = dist_from_map + map_out_start
                     seed_list[i] = (start_seed, dist)
+                    
                 # end extends past the new map
                 elif start_seed in range(map_in_start, map_in_end) and not end_seed in range(map_in_start, map_in_end):
                     dist_from_map = start_seed - map_in_start
@@ -34,6 +35,7 @@ def find_first_location(file):
                     new_start_seed = end_seed - new_dist
                     seed_list[i] = (start_seed, dist)
                     seed_list.append((new_start_seed, new_dist))
+                    
                 # start is before new map
                 elif end_seed in range(map_in_start, map_in_end) and not start_seed in range(map_in_start, map_in_end):
                     new_start_seed = start_seed
